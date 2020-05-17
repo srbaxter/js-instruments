@@ -18,27 +18,27 @@
 						<span class="sound">Crash</span>
 					</div>										
 					<div class="key-group">
-						<span class="code">?</span>
+						<span class="code">F</span>
 						<span class="sound">Floor Tom</span>
 					</div>
 					<div class="key-group">
-						<span class="code">?</span>
+						<span class="code">T</span>
 						<span class="sound">Left Tom</span>
 					</div>
 					<div class="key-group">
-						<span class="code">?</span>
+						<span class="code">Y</span>
 						<span class="sound">Right Tom</span>
 					</div>
 					<div class="key-group">
-						<span class="code">?</span>
+						<span class="code">B</span>
 						<span class="sound">Kick/Bass</span>
 					</div>
 					<div class="key-group">
-						<span class="code">?</span>
+						<span class="code">S</span>
 						<span class="sound">Snare</span>
 					</div>
 					<div class="key-group">
-						<span class="code">?</span>
+						<span class="code">H</span>
 						<span class="sound">Hi-Hat</span>
 					</div>
 				</div>
@@ -48,25 +48,25 @@
             <section class="drum-wrapper">
 				<img class="crash-cymbal" src="assets/img/crash.png" alt="Crash cymbal">
 				<img class="hihat-top-cymbal" src="assets/img/hihat-top.png" alt="Hi Hat cymbal">
-				<div class="key snare">
+				<div data-key="83" class="key snare">
 					<span>S</span>
 				</div>
-				<div class="key kick">
+				<div data-key="66" class="key kick">
 					<span>B</span>
 				</div>
-				<div class="key tom-high">
+				<div data-key="89" class="key tom-high">
 					<span>Y</span>
 				</div>
-				<div class="key tom-mid">
+				<div data-key="84" class="key tom-mid">
 					<span>T</span>
 				</div>
-				<div class="key tom-floor">
+				<div data-key="70" class="key tom-floor">
 					<span>F</span>
 				</div>
-				<div class="key crash">
+				<div data-key="67" class="key crash">
 					<span>C</span>
 				</div>
-				<div class="key hihat-closed">
+				<div data-key="72" class="key hihat-closed">
 					<span>H</span>
 				</div>
 				<img class="drum-kit" src="assets/img/kit.png" alt="Drum Kit" />			
@@ -79,13 +79,15 @@
         </main>
 
         <!-- audio files -->
-        <audio src="assets/sounds/Big-Rack-Tom.mp3"></audio>
-        <audio src="assets/sounds/Crash.mp3"></audio>
-        <audio src="assets/sounds/Floor-Tom.mp3"></audio>
-        <audio src="assets/sounds/Hi-Hat-Closed.mp3"></audio>
-        <audio src="assets/sounds/High-Hat-Open.mp3"></audio>
-        <audio src="assets/sounds/Kick.mp3"></audio>
-        <audio src="assets/sounds/Small-Rack-Tom.mp3"></audio>
-        <audio src="assets/sounds/Snare.mp3"></audio>
+        <audio data-key="84" src="assets/sounds/Big-Rack-Tom.mp3"></audio>
+        <audio data-key="67" src="assets/sounds/Crash.mp3"></audio>
+        <audio data-key="70" src="assets/sounds/Floor-Tom.mp3"></audio>
+        <audio data-key="72" src="assets/sounds/Hi-Hat-Closed.mp3"></audio>
+        <audio data-key="66" src="assets/sounds/Kick.mp3"></audio>
+        <audio data-key="89" src="assets/sounds/Small-Rack-Tom.mp3"></audio>
+        <audio data-key="83" src="assets/sounds/Snare.mp3"></audio>
+
+		<!-- load in scripts to make audio and transformations work -->
+        <script src="js/scripts-finish.js"></script>
     </body>
 </html>
